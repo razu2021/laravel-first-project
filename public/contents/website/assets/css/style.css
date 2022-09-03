@@ -1,0 +1,1305 @@
+
+@import url('https://fonts.googleapis.com{{asset('contents/website')}}/assets/2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Oswald:wght@300;400;500;700&family=Roboto:wght@300;400;500;700;900&family=Tiro+Bangla&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+body{
+    overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px ;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+}
+p{
+    margin: 0px;
+    color: #000;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+}
+
+.section-padding{
+    padding: 50px 0px;
+}
+.clearfix{
+    display: block;
+    content: "";
+    clear: both;
+}
+img{
+    vertical-align: middle;
+  height: auto;
+   width: 100%;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #000;
+}
+p{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px auto;
+    text-align: left;
+}
+ol,ul{
+    list-style-type: none;
+    margin: 0px ;
+    padding: 0px;
+}
+.met-our-team-about:hover{
+    background: linear-gradient(
+        45deg,
+        rgba(29, 236, 197, 0.5),
+        rgba(91, 14, 214, 0.5) 100%
+       
+    );
+    z-index:999;
+}
+
+.my-modal{
+    top:200px
+}
+.my-modal-header{
+    background: #2B3044;
+    text-align: center;
+}
+.my-modal-header h5{
+   color: #fff;
+}
+
+
+.my-modal-body{
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+.my-modal-body p{
+    color: #000;
+    text-align: justify;
+    font-size: 16px;
+    font-family: 'Open Sans ',sans-serif;
+    font-weight: 400;
+
+}
+.my-modal-body img{
+    height: 200px;
+    width: 200px;
+    vertical-align: middle;
+    margin: 10px 20px ;
+}
+.my-modal-footer{
+    background: #2B3044;
+
+}
+.modal-posittion{
+    position: fixed;
+    top: 55px !important;
+    left: 0;
+    z-index: 1055;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    outline: 0;
+    
+}
+/* =====MAIN CSS START HERE ================================================================================================================================================================== */
+/* =====MAIN CSS START HERE ============================================================================================= */
+
+
+.header-bg{
+    background: #2B3044;
+}
+.top-bar a img{
+    height: 70px;
+    width: 100%;
+ }
+.top-bar{
+  
+   border-bottom: 1px dotted #000;
+   padding: 0px 10px;
+}
+.top-bar ul li a{
+    color: #000;
+    border: 1px dotted #000;
+ }
+.top-bar ul li:last-child a{
+    color: #000;
+ }
+.top-bar ul li:last-child a:hover{
+    color: #fff;
+ }
+ /* ========= TOP BAR CSS END HERE ============== */
+ .offcan_sidebar ul li{
+    border-bottom: 1px dotted #000 !important;
+ }
+.offcan_sidebar ul li a i{
+    color: #000;
+    font-size: 26px;
+    text-transform: capitalize;  
+ }
+
+ #ofcanvas{
+    background: #1F2437;
+    transition: 1s all;
+ }
+ .coll tr td a{
+    color: #fff;
+ }
+ .coll tr td:hover {
+  background: #fff;
+  transition: 1s all;
+ }
+ .coll tr td:hover a{
+    color: rgb(33, 86, 233);
+ }
+ /*  ===========OFF CANVAS CSS END HERE ================= */
+.main-menu{
+    background:#fff;
+    border-bottom: 1px solid #000;
+}
+ .main-menu ul li a{
+    text-transform:capitalize;
+    font-size: 18px ;
+    color: rgb(17, 17, 17);
+    padding: 10px 10px ;
+    border: 1px dotted #000;
+ }
+ .main-menu ul li a span{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 30%;
+
+ }
+/* ===========  MAIN MENU CSS END HERE -===================== */
+.main-menu-bg{
+    background: #2B3044;
+    border-bottom: 1px dotted #000;
+    padding: 20px 0px;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.main-menu2 ul{
+   display: inline-block;
+   
+   
+}
+.main-menu2 ul li{
+   display: inline-block;
+   border-right: 1px solid #fff;
+    padding: 10px 10px;
+}
+
+.main-menu2 ul li a{
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.main-menu2-right ul li a{
+    font-size: 16px;
+    color: #000;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+
+/* sociral midea icon  */
+.main-menu2-right ul{
+    float: right;
+}
+.main-menu2-right ul li{ 
+    display: inline-flex;
+    border: 1px dotted #fff;
+    padding: 8px 10px;
+    background: #fff;
+}
+
+.main-menu2-right ul li a{
+    font-size: 18px;
+    color: #000;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+/*  sub menu  */
+.sub-menu{
+   display: none;
+   margin-top: 11px;
+   text-align: left;
+   color: #fff;
+   z-index: 999;
+  
+}
+.main-menu2 ul li:hover .sub-menu{
+    position: absolute;
+    display: block;
+    background: #fff;
+    color: #000;
+}
+.sub-menu ul{
+    width: 200px;
+    background: #fff;
+}
+.sub-menu ul li {
+    display: block;
+    border: none;
+    padding: 10px 15px;
+    border-bottom: 1px dotted #000;
+}
+.sub-menu ul li:last-child{
+    border: none;
+}
+.sub-menu ul li:hover{
+    background: rgb(51, 141, 243);
+}
+.sub-menu ul li:hover a{
+    color: #fff;
+}
+.sub-menu ul li a{
+    font-size: 16px;
+    color: #000;
+}
+
+/* ===========  banner slider  area css start======= */
+
+  .main-slider {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+  }
+  .slider-item {
+    top: 0;
+    max-height:100vh !important;
+    width: 100% !important;
+    position: relative;
+   
+  }
+  .slider-item img {
+    position: relative;
+   height: 100vh ;
+    width: auto;
+
+  } 
+
+ 
+@keyframes animates{
+    0% {
+        left:-100%;
+        opacity: 0;
+    
+      
+      }
+    25% {
+        left: 0;
+        opacity: 1;
+      
+      }
+    50% {
+        left: 0;
+        opacity: 1;
+      
+      }
+    75%{
+        left: 0;
+        opacity: 1;
+      
+      }
+    100%{
+        left: 0;
+        opacity: 1;
+      
+      }
+}
+
+
+  .slider-text {
+    position: absolute !important;
+    top: 20%;
+    width: 100%;
+    margin: 0 atuo ;
+    z-index: 9;
+    padding: 10px;
+    
+  } 
+  
+  .slider-text h1{
+        color: #fff;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 700;
+        margin: 0px;
+        position: relative;
+        animation: animates 4s infinite;
+  } 
+
+  .slider-text h6{
+        position: relative;
+        color: #fff;
+        animation: animates 4s infinite;
+  } 
+  .slider-text p{
+        font-size: 16px;
+        color: #fff;
+        font-family: 'Roboto',sans-serif;
+        font-weight: 400;
+        margin: 0px;
+
+  } 
+  .slider-text button{
+    border: none;
+    padding: 8px 10px;
+    border: 2px solid #fff;
+    background: #000;
+  } 
+  .slider-text button a{
+    color: #fff;
+    padding: 5px 0px ;
+  } 
+  .slider-text button:hover{
+    background: transparent;
+  } 
+  .bottom-text{
+    background: linear-gradient(to right, rgba(8, 8, 8, 0.35), rgb(0, 0, 0));
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rg;
+      width: 100%;
+      text-align: left;
+  }
+  .bottom-text h1{
+      font-size: 26px;
+      font-family: 'Oswald',sans-serif;
+      font-weight: 700;
+      padding: 5px 0px ;
+  }
+  .bottom-text p{
+      font-size: 16px;
+      font-family: 'Open Sans',sans-serif;
+      font-weight: 200;
+      color: #fff;
+      padding: 5px;
+  }
+
+.overlay{
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 110, 236, 0.65), rgba(240, 53, 20, 0.65));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;  
+}
+.overlay-about{
+    position: absolute;
+    background: linear-gradient(to right, rgba(0, 110, 236, 0.65), rgba(240, 53, 20, 0.65));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    animation:overlay 5s infinite;
+}
+  
+@keyframes overlay{
+    0% {
+        left:-100% ;
+        opacity:0;
+      }
+    25%{
+        left:0%;
+        opacity:1;
+      }
+    50%{
+        left:0%;
+        opacity:1;
+    }
+    75%{
+        left:0%;
+        opacity:1;
+    }
+    100%{
+        left:100%;
+        opacity:1;
+    }
+}
+  #slider {
+    position: relative;
+  }
+  
+  #slider .main-slider .owl-dots {
+    position: absolute;
+    top: 85%;
+    right: 45%;
+    transform: translate(-50%, -50%);
+  }
+.about-title h1{
+    font-family:'Robot',sans-serif;
+    font-weight:700;
+    text-transform: uppercase;
+    text-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.about-image{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.about-image img{
+    height:100%;
+}
+.about-content{
+    height: 100%;
+   padding:100px 20px ;
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.about-content h3{ 
+    font-size:28px;
+    font-family:'Open Sans ',sans-serif;
+    font-weight:500;
+    padding:10px 0px 
+}
+.about-content p{ 
+    font-size:16px;
+    font-family:'Open Sans ',sans-serif;
+    font-weight:200;
+    padding:10px 0px 
+}
+
+.attroney{
+    text-align: center;
+    position: relative;
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.attroney:hover .attoreny-info{
+    top: 20%;
+    transition: 0.35s all;
+}
+.attoreny-image img{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 300px;
+    width:300px;
+    border-radius: 50%;
+}
+.attoreny h1{
+    text-align: center;
+    color:#fff;
+    font-family:'Robot',sans-serif;
+    font-weight:700;
+    padding:15px 0px ;
+    text-transform: capitalize;
+}
+
+  /* immigration css  */
+  .slider-text-immi{
+    position: absolute !important;
+    width: 100%;
+    margin: 0 atuo ;
+    z-index: 9;
+    transition: 0.5s all;
+    padding: 10px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+  .slider-text-immi h1 {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    
+    
+}
+  .slider-text-immi h6 {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 10px;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    
+}
+.slider-text-immi p {
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    margin: 0 auto ;
+    padding: 10px;
+    text-align: center ;
+   width: 30%;
+}
+.our-visa-service h5{
+    color: #000;
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 200;
+    text-transform: capitalize;
+   
+}
+.our-visa-service p{
+    color: #000;
+    font-size: 16px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.study-aborods-immi h6 {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin: 0px;
+    padding: 10px 0px;
+}
+.study-aborods-immi h5{
+    color: #000;
+
+}
+.study-aborods-immi h3 {
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 700;
+    padding: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.study-aborods-immi p {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    padding: 10px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    
+    
+}
+
+.your-choose h1{
+    text-transform:capitalize;
+    font-weight:500;
+    font-family:'Open Sans';
+    padding:10px 0px ;
+}
+.your-choose p{
+    font-size:16px;
+    text-transform:capitalize;
+    font-weight:200;
+    font-family:'Open Sans'; 
+}
+
+/* study abroad css  */
+.slider-text-abroad{
+    position: absolute;
+    top: 20%;
+    text-align:left;
+    transform: translate(0%,60%);
+    overflow: hidden;
+    width: 700px;
+    background: rgba(0, 0, 0,0.35);
+    padding: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.slider-text-abroad h3 {
+    color: #fff;
+    font-family: auto;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px;
+    
+}
+.slider-text-abroad h2{
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 900;
+    padding: 5px 0px ;
+    text-transform: uppercase;
+}
+.slider-text-abroad h5 {
+    color: #fff;
+    font-family: auto;
+    font-weight: 200;
+    text-transform: capitalize;
+    margin: 0px;
+    font-size: 26px;
+}
+
+.our-course{
+    border: 1px solid #000; 
+    background: #fff;
+    transition: 1s all;
+    margin: 10px 0px ;
+    border-radius: 10px ;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    overflow: hidden;
+}
+.our-course img{
+    height: 200px;
+}
+.our-course:hover{
+ background: #2E416B;
+ transition: 1s all;
+ box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.our-course:hover h3{
+ color: #fff;
+ transition: 1s all ;
+}
+.our-course:hover h6{
+ color: #fff;
+ transition: 1s all ;
+}
+.our-course:hover p{
+ color: #fff;
+ transition: 1s all ;
+}
+.our-course:hover a{
+ color: #fff;
+ transition: 1s all ;
+}
+
+.our-course h6{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.our-course h3{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #000;
+    text-transform: capitalize;
+    font-size: 22px;
+}
+.our-course p{
+    font-size: 16px s;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+    color: #000;
+    padding: 10px 0px ;
+}
+
+.populer-course h2{
+    color: #2C3F69;
+    font-family: 'Open Sans ',sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+
+}
+.populer-course p{
+    font-size: 16px;
+    color: #2C3F69;
+    font-family: 'Open Sans ',sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+
+
+/* teams css */
+.all-team-members{
+    position: relative;
+    overflow: hidden;
+    transition: 0.35s all;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.all-team-members img{
+    height: 300px;
+    width: 100%;
+}
+.team-info{
+    position: absolute;
+    bottom:-70%;
+    background:rgba(0, 126, 230,0.75);
+    width: 100%;
+    height: 100%;
+    transition: 0.35s all;
+    
+}
+.all-team-members:hover .team-info{
+    bottom: 0;
+    transition: 0.35s all;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.team-info h1 {
+    font-size: 25px;
+    color: #000;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    margin-top:20px ;
+}
+.team-info h6 {
+    font-size: 20px;
+    color: #000;
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+.team-info p{
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 20px ;
+    color: #000;
+    font-family: 'Open Sans ',sans-serif;
+}
+.team-info ul li a{
+    text-align: center;
+    font-size: 20px;
+    transform: translate(80%,0%);
+    padding: 0px 10px;
+}
+.teams-social{
+    text-align: center;   
+}
+.teams-social ul li {
+    display: inline;
+}
+.teams-social ul li a{
+    font-size: 17px;
+    color: #000;
+}
+
+
+.immi-testimonial-title{
+    background: #2B3044;
+    padding: 20px 20px ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+  
+}
+.get-agency{
+    text-align: center;
+    z-index :999;
+}
+/* more country  */
+
+
+.more-details-uk h1 {
+    color: #000;
+    font-size: 38px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    padding: 10px 0px;
+    text-transform:capitalize;
+}
+.more-details-uk h3 {
+    color: #000;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    padding: 10px 0px;
+    text-transform:capitalize;
+}
+.more-details-uk p {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    padding: 10px 0px;
+}
+/* privecy css start here  */
+.our-privecy h1 {
+    color: #000;
+    /* font-size: 45px; */
+    font-family: 'Open Sans';
+    font-weight: 500;
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+.our-privecy h6 {
+    color: #000;
+    font-size: 15px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-transform: capitalize;
+    padding:10px 0px ;
+}
+.our-privecy p {
+    color: #000;
+    font-size: 14px;
+    font-family: 'Open Sans';
+    text-align: left;
+    text-align: justify;
+    text-transform: capitalize;
+    padding-top: 10px 0px;
+}
+
+
+/* single  blog  */
+.about-single-blog-side ul li{
+    font-size: 18px;
+    font-family:'Open Sans',sans-serif;
+    font-weight: 200;
+    padding:5px 0px ;
+    color:#000;
+    border-bottom:1px solid rgba(7, 7, 7,0.10);
+    
+}
+.about-single-blog-side ul li span{
+    font-size: 16px;
+    margin-right: 12px ;
+    color: green;
+
+}
+.single-about-image{
+    position: relative;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+.single-about-image img{
+    position: absolute;
+    height:100%;
+    width: 100% ;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.single-about-content h1 {
+    color: #000;
+    font-size: 36px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 0 auto;
+    padding: 10px 0px;
+    text-transform: capitalize;
+}
+.single-about-content h4 {
+    color: #000;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+    text-transform: capitalize;
+}
+.single-about-content p {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Open Sans';
+    font-weight: 200;
+    text-align: left;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========  about section ccss */
+.common-section{
+    text-align: center;
+    padding: 30px 0px;
+    background: #fff;
+
+}
+.common-section h1{
+    position: relative;
+    font-size: 40px;
+    color: #000;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    background: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.about-image img{
+   height: 600px;
+    width: 100%  ;
+}
+.about-text{
+    padding-top: 0px;
+    padding-left: 15px;
+}
+
+.about-text h4{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.about-text h2{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 0px ;
+}
+.about-text p{
+    font-size: 18px;
+    text-align: justify;
+    padding: 5px 0px ;
+}
+
+
+
+
+/* service area css start  */
+.card{
+    box-shadow: 1px ,2px ,3px ,10px red;
+}
+.card img{
+   height: 200px;
+    width: 100%;
+}
+
+.card-body h5{
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card-body p{
+    font-size: 14px;
+    text-transform: normal;
+    text-align: justify;
+}
+.card-footer{
+    background: rgb(58, 151, 228);
+    border: 1px solid #000;
+    color: #fff;
+}
+.card-footer a{
+    color: #fff;
+    font-size: 18px;
+}
+.card-footer:hover a{
+   background: transparent;
+   color: #000;
+}
+.card-footer span{
+   color: #000;
+  padding-left: 30px;
+}
+
+/* team area css start here  */
+
+.our-team{
+    background: red;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+   border: 1px double #000;
+}
+.our-team:hover .team-social ul{
+    display: block;   
+    transition-delay: 2s;
+}
+.team-image{
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+.team-image img{
+    position: absolute;
+    height: 200px ;
+    width: 100%;
+    overflow: hidden;
+    transition: 1.5s all;
+}
+.team-image:hover img{
+    transform: scale(1.2);
+    transition: 1.5s all;
+    overflow: hidden;
+}
+.team-content{
+    padding: 10px 10px ;
+    background: #fff;
+}
+.team-content h1{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 5px 0px ;
+}
+.team-content h5{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 5px 0px ;
+}
+.team-social ul{
+    position: absolute;
+    top:0;
+    background: #fff;
+    height: 200px;
+    display: none;
+    left: 0;
+
+}
+.team-social ul li{
+    display: block;
+    padding: 7px 15px;
+    margin-top: 2px;
+}
+.team-social ul li a{
+    font-size: 20px;
+}
+.team-social ul li:hover {
+    background: rgba(5, 99, 240, 0.356);
+}
+
+.counter_content p {
+    font-size: 50px !important;
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.counter_content i {
+    font-size: 45px !important;
+    margin-bottom: 15px;
+}
+.counter_content {
+    text-align: center;
+    margin-top: 35%;
+    border: 2px dotted #000;
+    height: 220px;
+    padding-top: 25px;
+}
+.counter_content h3 {
+    font-size: 16px !important;
+    letter-spacing: 2px;
+        margin-top: 10px;
+}
+
+.focus1{
+    background: rgba(34, 201, 201, 0.589);
+}
+.focus2{
+    background: rgba(25, 209, 209, 0.856);
+}
+/* about page css start here  */
+
+.about2-title{
+    background: #fff;
+    padding: 40px;
+    
+}
+.about2-title h4{
+    font-size: 26px;
+    padding: 10px 0px;
+
+}
+.about2-title h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+.about2-title p{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    text-transform: capitalize;
+    padding: 10px 0px;
+}
+.about2-title a{
+   color: rgb(46, 10, 248);
+   font-size: 18px;
+   text-transform: uppercase;
+   padding: 10px 0px;
+   
+}
+.about2-title a:hover{
+  color: #000;
+  border-bottom: 1px solid #000;
+   
+}
+
+.fade-right {
+    position: relative;
+    background: red;
+    height: 200px;
+    width: 300px;
+    float: right;
+    animation: 6s all;
+    animation-name: animate;
+   
+}
+
+@keyframes  animate
+{
+  0%{
+    right: 0;
+     
+  }
+100%{
+      right: 600px;
+      
+  }
+ 
+  }
+
+
+
+
+/* blog page css */
+.blog1 img{
+    min-height: 250px;
+}
+.blog-con h5 {
+    color: #000;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0px ;
+}
+.blog-con p {
+    color: #000;
+    font-size: 16px;
+    margin: 0px;
+    text-align: left;
+    justify-content: center;
+    font-family: 'Open Sans';
+    padding: 10px 0px;
+}
+.blog-con a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 16px;
+}
+
+/* light box practice  */
+
+/* logal . html css  */
+.practice-area  ul li span{
+    font-size: 40px;
+    color: #fff;
+    margin: 10px ;
+}
+.practice-area  ul li {
+    font-size: 22px;
+    margin: 10px ;
+    background: rgb(65, 128, 247);
+    color: #fff;
+    transition: 1s all ;
+}
+.practice-area  ul li:hover {
+ background: rgb(30, 31, 25);
+ color: #000;
+ transition: 1s ;
+}
+
+
+
+
+.scrollup {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-align: center;
+    padding: 10px;
+    z-index: 100;
+    display: none;
+  }
+/* ========== footer Area start Here ======== */
+.f-bg, .copyright{
+    background: #0A0A24;
+    padding: 20px 0px ;
+}
+.footer-content h4{
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    color: #fff;
+    border: 1px dotted #fff;
+    text-transform: capitalize;
+}
+.footer-content img{
+    background: #fff;
+    width: 100%;
+    height: auto;
+    margin: 8px 0px;
+}
+.footer-content p{
+    color: #fff; 
+}
+.footer-content ul li{
+    width: 100%;
+}
+.footer-content ul li a{
+    font-size: 14px ;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding: 8px 0px !important;
+    transition: 1s all;
+}
+.footer-content ul li:hover a{
+    color: rgb(101, 132, 216);
+    transition: 1s all ;
+}
+.social-icon-footer{
+    background: #fff !important;
+    border: none;
+}
+.social-icon-footer ul li{
+   display: inline;
+    padding: 5px 10px ;
+    border: 1px solid #000;
+}
+.social-icon-footer ul li a{
+    font-size: 20px;
+    color: #000;
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    border: none;
+}
+/* ==========  footer area end  here  */

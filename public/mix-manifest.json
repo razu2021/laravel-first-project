@@ -1,0 +1,4 @@
+{
+    "/js/app.js": "/js/app.js",
+    "{{asset('contents/website')}}/assets//app.css": "{{asset('contents/website')}}/assets//app.css"
+}

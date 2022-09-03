@@ -1,0 +1,63 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  outline: 0px;
+}
+
+img{
+  border: 0px;
+}
+
+ul, ol{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+
+}
+
+.card_header_title{
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.card_header_title i{
+  margin-right: 5px;
+}
+
+.card_header_btn a{
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.card_header_btn a i{
+  margin-right: 5px;
+}
+
+table.custom_table{
+
+}
+
+.col_form_label{
+  text-align: right;
+  padding-right: 0px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form_control{
+
+}
+
+span.req_star{
+  color: red;
+  font-weight: bold;
+}

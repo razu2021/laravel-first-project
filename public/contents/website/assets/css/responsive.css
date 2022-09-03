@@ -1,0 +1,137 @@
+
+
+/* Extra small devices (phones, 600px and down) */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+    body{
+        overflow-x: hidden!important;
+    }
+    .welcome a{
+        display: none;
+    }
+    .main-menu-2{
+        display: none;
+    }
+    .main-menu-bg{
+        display: none;
+    }
+
+    .hc-nav-trigger span{
+        display: block !important;
+        width: 30px !important;
+        top: 5px !important;
+        left: 0px !important;
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+        background: #fff;
+        margin: 0px 0px ;
+    }
+
+    .slider-text-immi p{
+        width: 100%;
+    }
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .welcome a{
+        display: none;
+    }
+    .main-menu-2{
+        display: none;
+    }
+    .main-menu-bg{
+        display: none;
+    }
+    .hc-nav-trigger span{
+        display: block !important;
+        width: 30px !important;
+        top: 5px !important;
+        left: 0px !important;
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+        background: #fff;
+        margin: 0px 0px ;
+    }
+    .top-bar{
+        display: block;
+    }
+    .slider-text-immi p{
+        width: 100%;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .top-menu{
+        display:block;
+    }
+    .top-menu ul{
+        display: block;
+    }
+    .hc-nav-trigger span {
+        display: block !important;
+        width: 45px !important;
+        top: 62px !important;
+        left: 0px !important;
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+        background: #fff;
+        margin: 0px 0px;
+    }
+ 
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body{
+        overflow-x: hidden;
+    }
+    .welcome a{
+        display: block;
+    }
+    .top-menu{
+        display:block;
+    }
+    .top-menu ul li{
+        display: inline-block;
+    }
+    .main-menu-2{
+        display: block;
+    }
+    .main-menu-bg{
+        display: block;
+    }
+
+    .hc-nav-trigger span {
+        display: none !important;
+        width: 45px !important;
+        top: 62px !important;
+        left: 0px !important;
+        transform: translateY(-50%);
+        transform-origin: 50% 50%;
+        background: #fff;
+        margin: 0px 0px;
+    }
+}
+/* .hc-nav-trigger span{
+    display: block !important;
+    width: 30px !important;
+    top: 5px !important;
+    left: 0px !important;
+    transform: translateY(-50%);
+    transform-origin: 50% 50%;
+    background: #fff;
+    margin: 0px 0px ;
+} */
