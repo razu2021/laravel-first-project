@@ -39,7 +39,7 @@
                     <ul class="side-nav">
                         <li class="side-nav-title side-nav-item">Navigation</li>
                         <li class="side-nav-item">
-                            <a href="#" class="side-nav-link"><i class="uil-home-alt"></i><span>Dashboard</span></a>
+                            <a href="/dashboard" class="side-nav-link"><i class="uil-home-alt"></i><span>Dashboard</span></a>
                         </li>
 
                  
@@ -74,24 +74,70 @@
                             <div class="collapse" id="homeId">
                             <ul class="side-nav-second-level">
                                 <li>
-                                    <a href="{{url('dashboard/banner')}}">home slider   </a>
+                                    <a href="{{url('dashboard/website/homepageBanner')}}"> banner  slider   </a>
                                 </li>
                                 <li>
-                                    <a href="{{url('dashboard/banner')}}">home about </a>
+                                    <a href="{{url('dashboard/website/homepageabout')}}">home about </a>
+                                </li>
+                                <li>
+                                    <a href="{{url('dashboard/website/homepageabout2')}}">home about 2</a>
                                 </li>
                                 <li>
                                     <a href="{{url('dashboard/website/homepage')}}">home service</a>
                                 </li>
                                 <li>
-                                    <a href="{{url('dashboard/banner')}}">history</a>
+                                    <a href="{{url('dashboard/website/companyhistory')}}">founded history</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('dashboard/website/whychoose')}}">why choose us</a>
+                                </li>
+                                <li>
+                                    <a href="{{url('dashboard/website/teammembers')}}">team members</a>
                                 </li>
                             </ul>
                             </div>
                         </li>
-
-               
                         {{-- left side meny  --}}
-                   
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#teamid" aria-expanded="false" class="side-nav-link">
+                                <i class="uil-user-circle"></i><span> our team  </span><span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="teamid">
+                                <ul class="side-nav-second-level">
+                                    <li><a href="{{url('dashboard/website/ourteambanner')}}">team banner </a></li>
+                                    <li><a href="{{url('dashboard/website/ourallteam')}}">our all team </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#gellaryID" aria-expanded="false" class="side-nav-link">
+                                <i class="uil-user-circle"></i><span> our gellary  </span><span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="gellaryID">
+                                <ul class="side-nav-second-level">
+                                    <li><a href="{{url('dashboard/website/gellarybanner')}}">gellary Banner</a></li>
+                                    <li><a href="{{url('dashboard/website/gellaryimage')}}">gellary images</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="side-nav-item">
+                            <a data-bs-toggle="collapse" href="#blogid" aria-expanded="false" class="side-nav-link">
+                                <i class="uil-user-circle"></i><span> Blog  </span><span class="menu-arrow"></span>
+                            </a>
+                            <div class="collapse" id="blogid">
+                                <ul class="side-nav-second-level">
+                                    <li><a href="{{url('dashboard/website/blogbanner')}}">blog Banner </a></li>
+                                    <li><a href="{{url('dashboard/website/blogabout')}}"> about blog</a></li>
+                                    <li><a href="{{url('dashboard/website/updateblog')}}"> update blog</a></li>
+                                    <li><a href="{{url('dashboard/website/blogrecentproject')}}"> recent project </a></li>
+                                    <li><a href="{{url('dashboard/website/letestblogproject')}}"> letest project </a></li>
+                                </ul>
+                            </div>
+                        </li>
+
 
                         <li class="side-nav-item">
                             <a href="#" class="side-nav-link"><i class="uil-globe"></i><span>Live Site</span></a>

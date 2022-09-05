@@ -63,7 +63,7 @@ class serviceController extends Controller
 
           if($insert){
             Session::flash('success','value');
-            return redirect('dashboard/website/homepage/all');
+            return redirect('dashboard/website/homepage');
           }else{
             Session::flash('error','value');
             return redirect('dashboard/website/homepage/add');

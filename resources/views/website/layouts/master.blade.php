@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{asset('contents/website')}}/assets/css/owl.theme.default.min.css">
   <!-- animation css -->
   <link rel="stylesheet" href="{{asset('contents/website')}}/assets/css/aos.css">
+  <link rel="stylesheet" href="{{asset('contents/website')}}/assets/css/magnific-popup.css">
 <!-- end animation css  -->
     <link rel="stylesheet" href="{{asset('contents/website')}}/assets/css/self.css">
     <link rel="stylesheet" href="{{asset('contents/website')}}/assets/css/style.css">
@@ -539,7 +540,18 @@
   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+  <script>
+      $(document).ready(function(){
+    $('.gellarys').magnificPopup({
+        type:'image',
+        delegate: 'a',
+        gallery:{
+            enabled:true
+          }
+      });
+  });
   </script>
     <script src="{{asset('contents/website')}}/assets/js/custom.js"></script>
 

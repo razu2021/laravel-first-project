@@ -1044,20 +1044,7 @@
   
   <!-- specify project end here  -->
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
   <!-- End your project here-->
   <!-- our client say immigration  end  -->
@@ -1070,10 +1057,12 @@
               <div class="row gx-lg-5 align-items-center mb-5">
                 <div class="col-12 col-sm-12  col-md-12 col-lg-6 c0l-xl-6 col-xxl-6"  data-aos="flip-down"  data-aos-offset="200"  data-aos-delay="120"  data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-mirror="false"  data-aos-once="true" >
                 <div class="your-qusion 4 bg-white p-4 mb-4">
-                  <form>
+
+                  <form method="post" enctype="multipart/form-data" action="{{url('dashboard/website/clientquesion/insert')}}">
+                    @csrf
                     <!-- Name input -->
                     <div class="form-outline mb-4 bg-white">
-                      <input type="text" id="form4Example1" class="form-control">
+                      <input type="text" id="form4Example1" name="name" class="form-control">
                       <label class="form-label " for="form4Example1" style="margin-left: 0px;">Name</label>
                       <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;"></div>
@@ -1083,7 +1072,7 @@
                     </div>
                     <!-- Name phone -->
                     <div class="form-outline mb-4">
-                      <input type="tel" id="form4Example1" class="form-control">
+                      <input type="tel" id="form4Example1" class="form-control" name="phone">
                       <label class="form-label" for="form4Example1" style="margin-left: 0px;">phone</label>
                       <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;"></div>
@@ -1093,7 +1082,7 @@
                     </div>
                     <!-- Email input -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="form4Example2" class="form-control">
+                      <input type="email" id="form4Example2" class="form-control" name="email">
                       <label class="form-label" for="form4Example2" style="margin-left: 0px;">Email address</label>
                       <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;"></div>
@@ -1103,7 +1092,7 @@
                     </div>
                     <!-- Email subject -->
                     <div class="form-outline mb-4">
-                      <input type="email" id="form4Example2" class="form-control">
+                      <input type="text" id="form4Example2" class="form-control" name="subject">
                       <label class="form-label" for="form4Example2" style="margin-left: 0px;">Writte  a subject </label>
                       <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;"></div>
@@ -1113,7 +1102,7 @@
                     </div>
                     <!-- Message input -->
                     <div class="form-outline mb-4">
-                      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                      <textarea class="form-control" id="form4Example3" rows="4" name="quesion"></textarea>
                       <label class="form-label" for="form4Example3" style="margin-left: 0px;">Message</label>
                       <div class="form-notch">
                         <div class="form-notch-leading" style="width: 9px;"></div>
@@ -1122,8 +1111,10 @@
                       </div>
                     </div>
                     <!-- Submit button -->
-                    <button type="submit" class="btn      btn-primary btn-block mb-4" >Send</button>
+                    <button type="submit" class="btn      btn-primary btn-block mb-4" >submit</button>
                   </form>
+
+
                 </div>
                 </div>
                 <!-- form end  -->
@@ -1198,85 +1189,40 @@
   <section class="section-padding"  data-aos="fade-right"  data-aos-offset="200"  data-aos-delay="120"  data-aos-duration="1000" data-aos-easing="ease-in-out"  data-aos-mirror="false"  data-aos-once="true" >
     <div class="container">
       <div class="row">
-        <div class="col-12"  >
+        @foreach ($news_heading as $key=> $value )
+        <div class="col-12 col-sm-12 col-lg-12 col-xl-12 col-xxl-12 ">
           <div class="client-say">
-            <h1  class=" text-center text-bold" style="color:#000;font-size:35px;font-family:'Open Sans',sane sarif;font-weight:400 ;padding-bottom: 10px;">LATEST NEWS</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum consectetur soluta ratione sunt ipsa officiis deleniti voluptate natus illum? Ratione, enim quisquam molestias vero cum quia eius, temporibus quae nesciunt mollitia earum beatae, commodi voluptatem placeat ad velit aliquam aut. Laudantium, alias iste. Minus a aliquid ipsa praesentium cumque.</p>
+            <h1  class=" text-center text-bold" style="color:#000;font-size:35px;font-family:'Open Sans',sane sarif;font-weight:400 ;padding-bottom: 10px;">{{$value->news_heading}}</h1>
+            <p>{{$value->news_caption}}</p>
           </div>
           <hr class="hr hr-blurry" />
         </div>
+        @endforeach
+      
         <!-- col end  -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 " >
+
+                  @foreach ($news as $data)
+                    
+ 
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 ">
                       <div class="card shadow-2-strong" >
                         <div class="bg-image hover-overlay ripple shadow-4-strong rounded mx-3 ripple-surface-light" data-mdb-ripple-color="light" style="margin-top: -15px;">
-                          <img  src="{{asset('contents/website')}}/assets/image/course-1-img.jpg"  class="img-fluid" alt="" >
+                          <img  src="{{asset('uploads/'.$data->news_image)}}"  class="img-fluid" alt="" >
                         </div>
                         <div class="card-body text-left">
-                          <h5 class="card-title">My paradise</h5>
-                          <p class="card-text">Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam dignissim elementum. Donec a ullamcorper diam.</p>
+                          <h5 class="card-title">{{$data->news_title}}</h5>
+                          <p class="card-text">{{$data->news_info}}</p>
                           <hr class="hr hr-blurry" />
                           <ul class="list-group list-group-light list-group-small">
-                            <li class="list-group-item px-2"><span><i class="fa-solid fa-calendar-plus"></i></span> 00/00/0000</li>
+                            <li class="list-group-item px-2"><span><i class="fa-solid fa-calendar-plus"></i></span> {{$data->news_date}}</li>
                           </ul>
                           <hr class="hr hr-blurry" />
-                          <a href="#!" class="btn btn-primary btn-rounded"  >Read more</a>
+                          <a href="{{$data->button_url}}" class="btn btn-primary btn-rounded">
+                            {{$data->news_button}}</a>
                         </div>
                       </div>
                     </div>
-                    <!-- col-end  -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 " >
-                      <div class="card shadow-2-strong">
-                        <div class="bg-image hover-overlay ripple shadow-4-strong rounded mx-3 ripple-surface-light" data-mdb-ripple-color="light" style="margin-top: -15px;">
-                          <img  src="{{asset('contents/website')}}/assets/image/course-2-img.jpg"  class="img-fluid" alt="" >
-                        </div>
-                        <div class="card-body text-left">
-                          <h5 class="card-title">My paradise</h5>
-                          <p class="card-text">Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam dignissim elementum. Donec a ullamcorper diam.</p>
-                          <hr class="hr hr-blurry" />
-                          <ul class="list-group list-group-light list-group-small">
-                            <li class="list-group-item px-2"><span><i class="fa-solid fa-calendar-plus"></i></span> 00/00/0000</li>
-                          </ul>
-                          <hr class="hr hr-blurry" />
-                          <a href="#!" class="btn btn-primary btn-rounded"  >Read more</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- col-end  -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 " >
-                      <div class="card shadow-2-strong">
-                        <div class="bg-image hover-overlay ripple shadow-4-strong rounded mx-3 ripple-surface-light" data-mdb-ripple-color="light" style="margin-top: -15px;">
-                          <img  src="{{asset('contents/website')}}/assets/image/course-4-img.jpg"  class="img-fluid" alt="" >
-                        </div>
-                        <div class="card-body text-left">
-                          <h5 class="card-title">My paradise</h5>
-                          <p class="card-text">Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam dignissim elementum. Donec a ullamcorper diam.</p>
-                          <hr class="hr hr-blurry" />
-                          <ul class="list-group list-group-light list-group-small">
-                            <li class="list-group-item px-2"><span><i class="fa-solid fa-calendar-plus"></i></span> 00/00/0000</li>
-                          </ul>
-                          <hr class="hr hr-blurry" />
-                          <a href="#!" class="btn btn-primary btn-rounded"  >Read more</a>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- col-end  -->
-                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 " >
-                      <div class="card shadow-2-strong">
-                        <div class="bg-image hover-overlay ripple shadow-4-strong rounded mx-3 ripple-surface-light" data-mdb-ripple-color="light" style="margin-top: -15px;">
-                          <img  src="{{asset('contents/website')}}/assets/image/course-4-img.jpg"  class="img-fluid" alt="" >
-                        </div>
-                        <div class="card-body text-left">
-                          <h5 class="card-title">My paradise</h5>
-                          <p class="card-text">Ut pretium ultricies dignissim. Sed sit amet mi eget urna placerat vulputate. Ut vulputate est non quam dignissim elementum. Donec a ullamcorper diam.</p>
-                          <hr class="hr hr-blurry" />
-                          <ul class="list-group list-group-light list-group-small">
-                            <li class="list-group-item px-2"><span><i class="fa-solid fa-calendar-plus"></i></span> 00/00/0000</li>
-                          </ul>
-                          <hr class="hr hr-blurry" />
-                          <a href="#!" class="btn btn-primary btn-rounded"  >Read more</a>
-                        </div>
-                      </div>
-                    </div>
+                    @endforeach
                     <!-- col-end  -->
               </div>
         </div>
